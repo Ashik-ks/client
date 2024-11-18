@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.adduser1 {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:white;
+  color: #eaeaea;
+}
+
+.adminpage {
+  display: flex;
+  padding: 0;
+}
+
+.sidebar {
+  background-color: #F472B6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  width: 17%;
+  height: 90vh;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  cursor: pointer;
+  margin-bottom: 15px;
+  list-style: circle;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.settings {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.sidebar li.active {
+  background-color: #F472B6;
+}
+
+#fetchvalue2,
+#fetchvalue3 {
+  background-color: #333;
+  border: none;
+  color: white;
+}
+
+#fetchvalue1 {
+  background-color: #F472B6;
+  border: none;
+  color: white;
+}
+
+
+
+.resetpassword {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid rgb(40, 187, 40);
+  border-radius: 4px;
+}
+
+.logout-link1 {
+  color: rgb(230, 18, 18);
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#logoutdiv {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #dc3545;
+  background-color: #f8d7da;
+  border-radius: 5px;
+}
+
+.text-danger {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.spanbody {
+  padding: 3px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.spanbody:hover {
+  background-color: rgba(220, 53, 69, 0.1);
+}
+
+main {
+  flex: 1;
+  padding: 20px;
+  --color: rgba(235, 181, 232, 0.225);
+  background-color: #f3f5f5;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent),
+      linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%,transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%,transparent);
+  background-size: 55px 55px;
+}
+
+.adminul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.admintextbox {
+  padding: 10px;
+  width: 70%;
+}
+
+
+.adminul .nav-link {
+  color: white;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+
+.offcanvas {
+  width: 300px;
+}
+
+
+.offcanvas-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileimg {
+  width: 40px;
+  height: 40px;
+}
+
+.text-danger {
+  color: red;
+}
+
+.footer1 {
+  background-color: #f5f1f1;
+}
+
+
+.userlist {
+  display: block; 
+  width: 100%; 
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.user-card {
+  background-color: #fff; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 15px;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+
+.user-card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+}
+
+
+.user-image {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 20px; 
+  border-radius: 50%;
+}
+
+.user-details {
+  flex: 1; 
+  display: flex; 
+  gap: 15px; 
+  align-items: center; 
+  justify-content: space-evenly;
+}
+
+.user-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.user-email {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Styling for user actions (buttons) */
+.user-actions {
+  display: flex;
+  gap: 10px; /* Space between the buttons */
+}
+
+/* Styling for the buttons */
+.btn {
+  font-size: 14px;
+  background-color: #F472B6; /* Pink background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Btn{
+  font-size: 14px;
+  background-color: #F472B6; /* Pink background color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 28px;
+  padding: 5px;
+}
+
+.btn1 {
+  font-size: 20px;
+  background-color:transparent; /* Pink background color */
+  color:  #F472B6;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 28px;
+}
+.fa-long-arrow-right{
+  font-size: 20px;
+  color: #F472B6;
+}
+.btn:hover {
+  background-color: #F59EBC; /* Slightly darker pink on hover */
+}
+.blurred {
+  filter: blur(2px);
+}
+
+/* Styles for the confirmation modal */
+.logout-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 33%;
+  /* background: rgba(0, 0, 0, 0.5); Dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure the modal is above other content */
+  overflow: hidden; /* Prevent scrollbars on modal background */
+}
+
+/* Modal content styling */
+.logout-modal-content {
+  background: #F59EBC;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1100; /* Ensure the modal content is above the background */
+  position: relative; /* To make sure it's above the blurred content */
+  cursor: pointer;
+  max-height: 90vh; /* Ensure the modal doesn't get too large on small screens */
+  overflow-y: auto; /* Allow vertical scrolling if content exceeds the height */
+}
+
+/* Action buttons inside the modal */
+.logout-modal .modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+/* Modal buttons */
+.logout-modal .btn {
+  background-color:red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-modal .btn:hover {
+  background-color:red;
+}
+/* From Uiverse.io by kamehame-ha */ 
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  position: static;
+  max-width: 240px;
+  margin-left: 22px;
+}
+
+.coolinputlabeltext {
+  font-size: 0.75rem;
+  color: #F472B6;
+  font-weight: 700;
+  /* position: relative;
+  top: 0.5rem; */
+  margin: 0 0 0 7px;
+  padding: 0 3px;
+  background: white;
+  width: fit-content;
+}
+
+.coolinputinput {
+  padding: 11px 15px;
+  font-size: 0.75rem;
+  border: 2px  #F472B6 solid;
+  border-radius: 5px;
+  background: white;
+}
+
+.coolinputinput:focus {
+  outline: none;
+}
+.resetform{
+  border: solid 1px #8d8d8d;
+  border-radius: 20px;
+  background-color: #fff;
+}
+/* Custom styling for centering the ToastContainer */
+.toast-container-center {
+  position: fixed !important;
+  top: 6% !important; /* Center vertically */
+  left: 50% !important; /* Center horizontally */
+  transform: translate(-50%, -50%) !important; /* Adjust for true centering */
+  z-index: 9999 !important; /* Make sure the toast is on top */
+}
+.admincontainerimg{
+  width: 70px;
+}
+.password-container {
+  display: flex; /* Allows for better alignment */
+}
+
+.coolinputinput {
+  padding-right: 45px; /* Adjust to ensure text doesn't overlap the button */
+}
+
+
+
+
+
+
+
+
